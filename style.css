@@ -74,6 +74,7 @@ h1 {
     width: 100%;
     padding: 5px;
     border: 1px solid #eee;
+    flex-wrap: wrap;
 }
 li{
     color: rgba(0, 0, 0, 0.5);
@@ -81,6 +82,11 @@ li{
     width: 100%;
     padding-bottom: 5px;
     margin-bottom: 5px;
+}
+#question,#result{
+    word-break: break-all;
+    color: #84A7BA;
+    font-size: 14px;
 }
 @media screen and (max-width: 950px) {
 

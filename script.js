@@ -27,18 +27,18 @@ function fizzBuzz() {
             display.innerHTML = ""
             var num = (document.getElementById("counts").value).split(",")
             for (let i = 0; i < num.length; i++) {
-                show.push(num[i])
+                show.push(` ${num[i]} `)
                 if (num[i] % 3 == 0 && num[i] % 5 == 0) {
-                    res.push("FIZZBUZZ");
+                    res.push(" FIZZBUZZ ");
                     exp.push(`${num[i]} is divisble by BOTH 3 and 5 That why it is FIZZBUZZ`);
                 } else if (num[i] % 3 == 0) {
-                    res.push("FIZZ");
+                    res.push(" FIZZ ");
                     exp.push(`${num[i]} is divisble only by 3 That why it is FIZZ`);
                 } else if (num[i] % 5 == 0) {
-                    res.push("BUZZ");
+                    res.push(" BUZZ ");
                     exp.push(`${num[i]} is only divisble only by 5 That why it is BUZZ`);
                 } else {
-                    res.push(num[i]);
+                    res.push(` ${num[i]} `);
                     exp.push(`${num[i]} is nor divisble by 3 neither by 5`);
                 }
             }
