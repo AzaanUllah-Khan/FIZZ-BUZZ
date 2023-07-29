@@ -39,6 +39,7 @@ function fizzBuzz() {
                     exp.push(`${num[i]} is only divisble only by 5 That why it is BUZZ`);
                 } else {
                     res.push(num[i]);
+                    exp.push(`${num[i]} is nor divisble by 3 neither by 5`);
                 }
             }
             ques.innerHTML = show
